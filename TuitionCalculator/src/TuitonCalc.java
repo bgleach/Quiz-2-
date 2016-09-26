@@ -22,8 +22,8 @@ public class TuitonCalc {
 		double cost = initialCost; 
 		
 		for (int i = 0; i < 3; i++) {
-			cost += percentInc*cost;
-			totalCost += cost;
+			cost = (cost + percentInc*cost);
+			totalCost = (cost + totalCost);
 		}
 		
 		System.out.println("Cost of tuition:");		
